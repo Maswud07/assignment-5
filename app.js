@@ -1,4 +1,4 @@
-// ------- Data --------
+
 const services = [
   { id: 1, icon: '🛡️', name: 'National Emergency Number', subtitle: 'National Emergency', number: '999', tag: 'All' },
   { id: 2, icon: '🚓', name: 'Police Helpline Number', subtitle: 'Police', number: '999', tag: 'Police' },
@@ -10,3 +10,16 @@ const services = [
   { id: 8, icon: '🤝', name: 'Brac Helpline', subtitle: 'Brac', number: '16445', tag: 'NGO' },
   { id: 9, icon: '🚆', name: 'Bangladesh Railway Helpline', subtitle: 'Bangladesh Railway', number: '163', tag: 'Travel' }
 ];
+
+let likeCount = 0;
+let copyCount = 0;
+let coins = 100;
+
+const likeCountEl = document.getElementById('likeCount');
+const copyCountEl = document.getElementById('copyCount');
+const coinCountEl = document.getElementById('coinCount');
+
+const cardsContainer = document.getElementById('cardsContainer');
+const historyList = document.getElementById('historyList');
+const emptyHistory = document.getElementById('emptyHistory');
+const clearHistoryBtn = document.getElementById('clearHistoryBtn');
