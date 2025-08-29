@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emergency Service Directory</title>
-  <!-- Tailwind CDN -->
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,43 +46,41 @@
   </script>
 </head>
 <body class="font-inter bg-brand-light text-gray-800">
-  <!-- NAVBAR -->
+  
   <header class="bg-white/90 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="h-16 flex items-center justify-between">
-        <!-- Left: Logo + Name -->
+        
         <a href=" " class="flex items-center gap-3 group">
           <img src="assets/logo.png" class="w-8 h-8" alt=" ">
-          <div class="text-lg font-semibold tracking-tight">
-            <span class="text-brand-deeper">Emergency</span>
-            <span class="text-brand-mid">Service</span>
+          <div class="text-lg font-bold tracking-tight">
+            <span class="text-[#006747">Emergency<br></span>
+            <span class="text-[#006747">Service</span>
           </div>
         </a>
-        <!-- Right: Stats -->
+        
         <div class="flex items-center gap-3 sm:gap-5">
-          <div class="flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1">
-            <span class="text-rose-500 text-lg">❤</span>
-            <span class="text-sm font-medium">Likes:</span>
+          <div class="flex items-center gap-2 rounded-full bg-[rgba(65,255,107,0.1)] px-7 py-2">
             <span id="likeCount" class="text-sm font-bold">0</span>
+            <span class="text-rose-500 text-lg">❤</span>
+            
           </div>
-          <div class="flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1">
-            <img src="https://cdn-icons-png.flaticon.com/512/825/825540.png" class="w-4 h-4" alt="coin"/>
-            <span class="text-sm font-medium">Coins:</span>
+          <div class="flex items-center gap-2 rounded-full bg-[rgba(65,255,107,0.1)] px-5 py-3">
             <span id="coinCount" class="text-sm font-bold">100</span>
+            <img src="assets/coin.png" class="w-4 h-4" alt="coin"/>
+            
           </div>
-          <div class="flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8M8 12h8m-6 8h6a2 2 0 002-2v-5m-8 7H6a2 2 0 01-2-2V7a2 2 0 012-2h7l5 5v3" />
-            </svg>
-            <span class="text-sm font-medium">Copies:</span>
+          <div class="flex items-center gap-2 rounded-full bg-[#00A63E] px-5 py-3">
             <span id="copyCount" class="text-sm font-bold">0</span>
+            <span class="text-sm font-medium">Copy</span>
+            
           </div>
         </div>
         </div>
         </div>
         </header>
 
-        <!-- HERO -->
+       
   <section class="relative overflow-hidden">
     <div class="bg-gradient-to-r from-brand-deeper via-brand-dark to-brand-mid">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -95,15 +93,15 @@
     </div>
   </section>
 
-  <!-- MAIN -->
+  
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-      <!-- Cards column -->
+      
       <section class="lg:col-span-9 space-y-6" id="cardsContainer">
-        <!-- Cards will be injected by JS -->
+        
       </section>
 
-      <!-- History column -->
+      
       <aside class="lg:col-span-3">
         <div class="bg-white rounded-xl shadow-card border border-gray-200 p-4 sm:p-5">
           <div class="flex items-center justify-between mb-3 sm:mb-4">
@@ -113,10 +111,10 @@
               </svg>
               <span>Call History</span>
             </div>
-            <button id="clearHistoryBtn" class="text-sm px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 transition">Clear</button>
+            <button id="clearHistoryBtn" class="text-sm px-3 py-1.5 rounded-full bg-[#00A63E] hover:bg-gray-200 transition">Clear</button>
           </div>
           <ul id="historyList" class="space-y-3 max-h-[70vh] overflow-y-auto pr-1">
-            <!-- History items injected by JS -->
+            
           </ul>
           <p id="emptyHistory" class="text-center text-gray-400 text-sm py-8">No calls yet.</p>
         </div>

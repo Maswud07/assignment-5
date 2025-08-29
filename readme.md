@@ -1,166 +1,27 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
+What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+--getElementById(id) → Returns 'a single element'with the specified id. (Always unique)
+getElementsByClassName(string) → Returns a live HTMLCollection of all elements of that class.
+querySelector( selector )→ Returns the first element, matching a CSS selector.
+querySelectorAll( selector )=> Returns a 'static NodeList' of all elements that match a CSS selector.
 
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
+How do you create and insert a new element into the DOM?
+--A new element is created in the DOM by using the document.createElement() method, which generates the element in memory. To make it part of the document structure, it must then be inserted into the DOM tree using methods such as appendChild(), insertBefore(), or append().
 
-### 📅 No Deadline For 50 marks
+What is Event Bubbling and how does it work?
+--Event Bubbling, is a DOM mechanism in which an event originates on the innermost (target) element, and then travels upwards through its ancestors (parent - grandparent - etc. - document).
+As an example, when you click on a <button> in a <div> the first event is the click on the <button> which then bubbles up to the <div> and would then keep on until the document root unless otherwise.
 
-### 📅 Deadline For 30 marks: Any time after 29th August.
+What is Event Delegation in JavaScript? Why is it useful?
+--JavaScript Event Delegation is a method in which you do not add event listeners to a various child elements, but rather, only one event listener to a shared parent element. The event then bubbles up and you check the target of the event to take care of the action.
+Why it is useful:
+Efficiency - less memory usage to support event listening.
+Dynamic elements - is not affected by the addition or removal of child elements later.
+Cleaner code - more maintenance friendly as a single listener can handle a large number of child elements.
 
----
+What is the difference between preventDefault() and stopPropagation() methods?
+--preventDefault() → Stops the default action of an element from happening (e.g., stopping a form from submitting, or a link from navigating). It does not stop the event from propagating.
 
-## ✅ Main Requirements (50 Marks)
 
-### 1. Navbar
+stopPropagation() → Stops the event flow (bubbling or capturing) so the event does not travel to parent/ancestor elements. It does not affect the element’s default behavior.
 
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
 
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
-
----
-
-### 2. Main Section
-
-This Section will have layout as figma
-
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
-
-### Emergency Hotline Section
-
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
-
----
-
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-2. How do you **create and insert a new element into the DOM**?
-3. What is **Event Bubbling** and how does it work?
-4. What is **Event Delegation** in JavaScript? Why is it useful?
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
-
-## 🧪 Challenges Part (10 Marks)
-
-- On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)
-
-- Hotline number will be **copied on click** so it can be pasted anywhere (4 Marks)
-
-💡Hint: You can ask for Help from `ChatGPT` Mamma . Just copy the below prompt , generate answer. use it with your own way.
-
-```bash
-I have a card with some text and a button inside it. I want that when a user clicks the button, some specific text from the card is copied to the clipboard using JavaScript. Please provide the code and explain it step by step.
-```
-
-- After clicking on the **Call button**, the **exact time of the call** will be shown in the Call History section (3 Marks)
-
-💡Hint: Search Google with that below question
-
-```bash
-How to get current local time in js
-```
-
----
-
-## ⚙️ Technology Stack
-
-- HTML
-- CSS ( Vanilla , Tailwind CSS , DaisyUI , Others - wheatever you like )
-- JavaScript ( Vanilla only. No Framework / Library Allowed )
-
----
-
-## 📌 Rules
-
-- ✅ Minimum **5 meaningful commits** required
-- ❌ No Lorem Ipsum or dummy placeholder text. Use **relevant content only**
-
----
-
-## 🔗 What to Submit
-
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
-
----
-
-# Let's Code and Achieve your Dream 🎯
-# assignment-5
